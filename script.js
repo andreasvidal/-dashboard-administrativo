@@ -1,6 +1,7 @@
-//Toggle responsive menu
 function toggleNav() {
-  const menu = document.getElementById("nav-toggle");
-  console.log("menu:",menu);
-  menu.classList.toggle("open");
+  const menuMobile = document.getElementById("nav-mobile");
+
+  // Alterna entre visible y oculto
+  menuMobile.style.display =
+    menuMobile.style.display === "flex" ? "none" : "flex";
 }
