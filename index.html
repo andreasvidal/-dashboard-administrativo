@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+   <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería Animada con CSS Grid</title>
+  </head>
+  <body>
+    <header>
+      <h1>Dashboard</h1>
+      <nav class="nav-links" id="nav-links-toggle">
+        <ul id="nav-toggle" class="open">
+        <li><a href="#inicio">Dashboard</a></li>
+        <li><a href="#Usuarios">Usuarios</a></li>
+        <li><a href="#Ajustes">Ajustes</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleNav()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <section id="inicio"></section>
+       <section id="Usuarios"></section>
+        <section id="Ajustes"></section>
+    </div>
+
+    <script module src="script.js"></script>
+  </body>
+</html>

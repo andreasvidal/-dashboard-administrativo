@@ -1,0 +1,91 @@
+:root {
+  --color-primario: #324183;
+  --color-secundario: #e74c3c;
+  --color-acento: #f3b712;
+  --color-fondo: #f8f9fa;
+  --color-texto: #2c3e50;
+  --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --borde-radius: 8px;
+  --transicion: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+/* Header con navegación */
+header {
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  padding: 8px 16px;
+  width: 100%;
+}
+
+nav ul > li {
+  display: none;
+}
+
+.nav-links a {
+  background-color: var(--color-primario);
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+/*Nav toggle*/
+/*.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}*/
+
+/*.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: #fff;
+  margin-bottom: 4px;
+  border-radius: 5px;
+}*/
+/*open modal*/
+nav ul.open > li {
+  display: flex;
+  /*position: fixed;*/
+  place-items: center;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+  nav > li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 6px;
+    align-items: center;
+  }
+.open{
+    display: flex;
+    gap: 4px;
+}
+
+  /*Nav hover effect*/
+  .nav-links a:hover,
+  a:focus {
+    background-color: var(--color-acento);
+    color: var(--color-primario);
+  }
+}
